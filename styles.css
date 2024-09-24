@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Estilos generales para todo el sitio web */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,6 +11,7 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 header .logo img {
@@ -20,30 +21,56 @@ header .logo img {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
     color: #c8102e;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+h2 {
+    color: #c8102e;
+}
+
+footer {
+    background-color: #c8102e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para la tabla en el index.html */
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    background-color: #fff;
 }
 
 table, th, td {
@@ -55,29 +82,104 @@ th, td {
     text-align: left;
 }
 
-footer {
+thead {
     background-color: #c8102e;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
+/* Estilos específicos para la página de equipo (team.html) */
+.team-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-section ul li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.team-section ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos específicos para la página de historia (history.html) */
+.history-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.history-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos específicos para el formulario en contact.html */
 form {
     max-width: 600px;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #a60e23;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Estilos para pantallas más pequeñas (responsive) */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .team-section ul li {
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
 }
