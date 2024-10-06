@@ -14,25 +14,38 @@ header {
     box-shadow: 0 4px 2px -2px gray;
 }
 
-header .logo img {
-    width: 100px;
+.header-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el menú */
+    justify-content: center; /* Alinea horizontalmente el logo y el menú */
+    gap: 20px; /* Espacio entre el logo y el menú */
+}
+
+header .logo img{
+    max-width: 100px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantén el ancho automático si la imagen es más pequeña */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 0; /* Añade espacio debajo del logo */
+    display: block; /* Asegura que la imagen sea un bloque y no inline */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none; /* Eliminamos los puntos de la lista */
+    padding: 0; /* Eliminamos el padding por defecto */
     margin: 0;
+    display: flex; /* Flexbox para distribuir los ítems */
+    justify-content: center; /* Centramos los ítems horizontalmente */
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    margin: 0 25px; /* Espacio entre cada ítem del menú */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -65,7 +78,7 @@ footer {
     width: 100%;
 }
 
-/* Estilos para la tabla en el index.html */
+/* Tabla de index.html */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -87,7 +100,7 @@ thead {
     color: white;
 }
 
-/* Estilos específicos para la página de equipo (team.html) */
+/* Página team.html */
 .team-section ul {
     list-style-type: none;
     padding: 0;
@@ -111,7 +124,7 @@ thead {
     background-color: #f0f0f0;
 }
 
-/* Estilos específicos para la página de historia (history.html) */
+/* Página history.html */
 .history-section {
     background-color: #ffffff;
     padding: 20px;
@@ -124,7 +137,7 @@ thead {
     line-height: 1.6;
 }
 
-/* Estilos específicos para el formulario en contact.html */
+/* Formulario contact.html */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -166,7 +179,7 @@ textarea {
     min-height: 150px;
 }
 
-/* Estilos para pantallas más pequeñas (responsive) */
+/* Responsive design */
 @media screen and (max-width: 768px) {
     nav ul li {
         display: block;
