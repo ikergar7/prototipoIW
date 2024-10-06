@@ -22,7 +22,7 @@ header {
 }
 
 header .logo img{
-    max-width: 100px; /* Ajusta el tamaño del logo */
+    max-width: 55px; /* Ajusta el tamaño del logo */
     width: auto; /* Mantén el ancho automático si la imagen es más pequeña */
     height: auto; /* Mantiene la proporción de la imagen */
     margin-bottom: 0; /* Añade espacio debajo del logo */
