@@ -109,21 +109,40 @@ table, th, td {
     border: 1px solid #ddd;
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-thead {
-    background-color: #c8102e;
-    color: white;
-}
 
 /* Página team.html */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 20px 0; /* Margen vertical */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Bordes ligeros */
+    padding: 8px; /* Espaciado interno */
+    text-align: center; /* Alinear texto a la izquierda */
+}
+
+th {
+    background-color: #c8102e; /* Fondo claro para encabezados */
+    color: white;
+    font-weight: bold; /* Texto en negrita */
+}
+
+td {
+    vertical-align: middle; /* Centrar verticalmente */
+}
+
+.player-image {
+    width: 400px; /* Ancho de la imagen */
+    height: 300px; /* Mantener proporciones */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
 .team-section ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,12 +150,11 @@ thead {
 
 .team-section ul li {
     background-color: #ffffff;
-    border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 10px;
     width: 60%;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .team-section ul li:hover {
