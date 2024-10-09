@@ -74,12 +74,27 @@ p {
 
 footer {
     background-color: #c8102e;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    color: white; /* Texto del footer en blanco */
+    padding: 20px; /* Espaciado interno */
+    
+    display: flex; /* Activar flexbox */
+    justify-content: space-between; /* Distribuir el contenido: texto a la izquierda y redes a la derecha */
+    align-items: center; /* Alinear verticalmente el texto y las imágenes */
+}
+
+footer p {
+    margin: 0; /* Eliminar márgenes para centrar mejor */
+}
+
+footer .redes {
+    display: flex; /* Activar flexbox para las imágenes */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+footer .redes img {
+    width: 30px; /* Ajustar el ancho de todas las imágenes */
+    height: 30px; /* Ajustar la altura de todas las imágenes */
+    display: block; /* Asegurar que las imágenes se comporten como bloques */
 }
 
 /* Tabla de index.html */
@@ -155,13 +170,6 @@ thead {
     margin-bottom: 10px; /* Opcional: espacio debajo de la imagen */
     max-width: 350px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
-}
-
-.bob-pettit figcaption {
-    font-size: 14px; /* Tamaño del texto del pie de foto */
-    color: #555; /* Color gris suave */
-    margin-top: 8px; /* Espacio entre la imagen y el pie de foto */
-    font-style: italic; /* Estilo cursiva para el pie de foto */
 }
 
 /* Formulario contact.html */
