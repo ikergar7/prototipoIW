@@ -68,6 +68,10 @@ h2 {
     color: #c8102e;
 }
 
+p {
+    text-align: justify;
+}
+
 footer {
     background-color: #c8102e;
     color: white;
@@ -135,6 +139,29 @@ thead {
 .history-section p {
     font-size: 16px;
     line-height: 1.6;
+}
+
+.text-img-container img {
+    float: right; /* Hace que la imagen flote a la izquierda del texto */
+    margin-left: 15px; /* Deja espacio entre el texto y la imagen */
+    margin-bottom: 10px; /* Opcional: espacio debajo de la imagen */
+    max-width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.text-img-bobpettit-container img {
+    float: right; /* Hace que la imagen flote a la izquierda del texto */
+    margin-left: 15px; /* Deja espacio entre el texto y la imagen */
+    margin-bottom: 10px; /* Opcional: espacio debajo de la imagen */
+    max-width: 350px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.bob-pettit figcaption {
+    font-size: 14px; /* Tamaño del texto del pie de foto */
+    color: #555; /* Color gris suave */
+    margin-top: 8px; /* Espacio entre la imagen y el pie de foto */
+    font-style: italic; /* Estilo cursiva para el pie de foto */
 }
 
 /* Formulario contact.html */
