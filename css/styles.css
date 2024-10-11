@@ -74,7 +74,7 @@ p {
 footer {
     background-color: #c8102e;
     color: white;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,6 +120,7 @@ td {
 
 /* Boton de index.html*/
 .btn {
+    text-decoration: none;
     background-color: #c8102e;
     color: white;
     padding: 10px 20px;
@@ -127,11 +128,11 @@ td {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 10px auto;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
-button:hover {
+.btn:hover {
     background-color: #b3122c;
 }
 
