@@ -76,7 +76,6 @@ footer {
     background-color: #c8102e;
     color: white; /* Texto del footer en blanco */
     padding: 20px; /* Espaciado interno */
-    
     display: flex; /* Activar flexbox */
     justify-content: space-between; /* Distribuir el contenido: texto a la izquierda y redes a la derecha */
     align-items: center; /* Alinear verticalmente el texto y las imágenes */
@@ -109,6 +108,21 @@ table, th, td {
     border: 1px solid #ddd;
 }
 
+.btn {
+    background-color: #c8102e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px auto;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #b3122c;
+}
 
 /* Página team.html */
 table {
@@ -137,6 +151,38 @@ td {
     width: 400px; /* Ancho de la imagen */
     height: 300px; /* Mantener proporciones */
     border-radius: 5px; /* Bordes redondeados */
+}
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 30px; /* Espacio entre las filas */
+}
+
+.player {
+    display: contents; /* Hace que los elementos hijos se ajusten al grid */
+}
+
+.player-info {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-image img {
+    height: 300px;
+    max-width: 440px; /* Tamaño máximo para las imágenes */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 .team-section ul {
@@ -247,5 +293,11 @@ textarea {
     form {
         width: 100%;
         padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .players-grid {
+        grid-template-columns: 1fr;
     }
 }
